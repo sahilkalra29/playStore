@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="4dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_app_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="33.3">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/curr_ver_display"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/tv_app_name"
+        android:text="Current Version : "/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/btn_check_update"
+        android:text="Check-Update"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_round" />
+
+</LinearLayout>
